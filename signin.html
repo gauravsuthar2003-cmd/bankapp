@@ -48,6 +48,10 @@
             if (user) {
                 localStorage.setItem('currentuser',JSON.stringify(user));
                 alert("Login Successfully !!!");
+                let option = confirm("Do you Want to Start exam then click ok...")
+                if (option) {
+                    window.location.href = "examapp.html";
+                }
                 window.location.href = "bankapp.html";
             } else {
                 alert("Login Failed... Please check email or password");
